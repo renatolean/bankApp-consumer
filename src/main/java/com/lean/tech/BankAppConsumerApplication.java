@@ -15,7 +15,6 @@ public class BankAppConsumerApplication {
 	}
 
 	@Bean
-	@Qualifier("bankA-service")
 	WebClient bankAServiceWebClient(WebClient.Builder webClientBuilder, @Value("${bankA-service.url}") String baseUrl) {
 		return webClientBuilder
 				.baseUrl(baseUrl)

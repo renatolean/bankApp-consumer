@@ -16,6 +16,7 @@
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2022.0.1</spring-cloud.version>
+		<spring-cloud-contract.version>4.0.1</spring-cloud-contract.version>
 	</properties>
 	<dependencies>
 
@@ -49,6 +50,7 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-contract-stub-runner</artifactId>
+			<version>${spring-cloud-contract.version}</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
@@ -63,24 +65,5 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
-	<build>
-		<plugins>
-<!--			<plugin>-->
-<!--				<groupId>org.springframework.cloud</groupId>-->
-<!--				<artifactId>spring-cloud-contract-maven-plugin</artifactId>-->
-<!--				<version>4.0.1</version>-->
-<!--				<extensions>true</extensions>-->
-<!--				<configuration>-->
-<!--					<testFramework>JUNIT5</testFramework>-->
-<!--					<testMode>WEBTESTCLIENT</testMode>-->
-<!--				</configuration>-->
-<!--			</plugin>-->
-<!--			<plugin>-->
-<!--				<groupId>org.springframework.boot</groupId>-->
-<!--				<artifactId>spring-boot-maven-plugin</artifactId>-->
-<!--			</plugin>-->
-		</plugins>
-	</build>
 
 </project>
